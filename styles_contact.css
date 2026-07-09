@@ -1,0 +1,161 @@
+
+.contact-page {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.contact-title {
+    color: #445B8B;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* Hệ thống thẻ viên thuốc thông tin liên hệ */
+.contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 100px;
+    margin-bottom: 50px;
+}
+
+.info-pill {
+    height: 72px;
+    border: 1px solid #445B8B;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    gap: 15px;
+}
+
+.pill-icon {
+    font-size: 24px;
+    color: #445B8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+}
+
+.pill-text h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #445B8B;
+    line-height: 1.2;
+}
+
+.pill-text p {
+    font-size: 16px;
+    margin: 0;
+    color: #55627A;
+}
+
+/* Khu vực chi tiết: Form & Map bọc chung Flexbox */
+.contact-details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 588px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px 10px 50px;
+    border: 1px solid #445B8B;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Afacad', sans-serif;
+    outline: none;
+    color: #333;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #445B8B;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Afacad', sans-serif;
+    outline: none;
+    resize: none;
+    color: #333;
+}
+
+.form-icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #445B8B;
+}
+
+/* Nút submit đẩy sát sang phải giống thiết kế */
+.btn-submit {
+    align-self: flex-end;
+    width: 110px;
+    height: 40px;
+    background-color: #445B8B;
+    color: white;
+    font-family: 'Afacad', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #2b3d63;
+}
+
+/* Khung hiển thị bản đồ */
+.contact-map {
+    width: 532px;
+    height: 430px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #cbd5e1;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Responsive cơ bản nếu thu nhỏ màn hình */
+@media (max-width: 992px) {
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .contact-details-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form, .contact-map {
+        width: 100%;
+        max-width: 100%;
+    }
+    .contact-map {
+        height: 350px;
+    }
+}
