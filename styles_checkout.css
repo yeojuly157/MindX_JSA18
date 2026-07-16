@@ -1,0 +1,147 @@
+.checkout-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f5f9; 
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.checkout-box {
+    width: 100%;
+    max-width: 450px; 
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px; 
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+    box-sizing: border-box;
+}
+
+.checkout-title {
+    font-family: 'Afacad', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #445B8B;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: #f8fafc;
+}
+
+.payment-option:hover {
+    border-color: #445B8B;
+    background-color: #f1f5f9;
+}
+
+.payment-option label {
+    font-family: 'Afacad', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #334155;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.payment-option input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #445B8B;
+    margin: 0;
+}
+
+.checkout-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.btn-checkout, .btn-checkout-secondary {
+    flex: 1; 
+    font-family: 'Afacad', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 0;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.btn-checkout {
+    background-color: #445B8B;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-checkout:hover {
+    background-color: #2a3d66;
+}
+
+.btn-checkout-secondary {
+    background-color: #ffffff;
+    color: #445B8B;
+    border: 1px solid #445B8B;
+}
+
+.btn-checkout-secondary:hover {
+    background-color: #f1f5f9;
+}
+
+.qr-container {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-container.active {
+    font-family: 'Afacad', sans-serif;
+    max-height: 400px;
+    opacity: 1;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px dashed #445B8B;
+    border-radius: 12px;
+    background-color: #f8fafc;
+}
+
+.qr-image {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.qr-instruction {
+    font-family: 'Afacad', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #445B8B;
+    margin-bottom: 8px;
+}

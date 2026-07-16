@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Nhanh Tầm Nhìn Mới - Thanh Toán</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles_checkout.css">
+    <link rel="icon" type="image/png" href="img/logo_newvision.png">
+<body class="checkout-page">
+
+    <div class="checkout-box">
+        <h2 class="checkout-title">Phương thức thanh toán</h2>
+        
+        <form id="checkoutForm">
+            <div class="payment-methods">
+                <div class="payment-option">
+                    <input type="radio" id="cod" name="payment" value="COD" checked>
+                    <label for="cod"><i class="bi bi-cash-stack"></i> Thanh toán khi nhận hàng (COD)</label>
+                </div>
+
+                <div class="payment-option-wrapper">
+                    <div class="payment-option">
+                        <input type="radio" id="bank" name="payment" value="Chuyển khoản">
+                        <label for="bank"><i class="bi bi-bank"></i> Chuyển khoản ngân hàng</label>
+                    </div>
+                    
+                    <div id="qrContainer" class="qr-container">
+                        <div class="bank-details">
+                            <p><strong>Ngân hàng:</strong> MB Bank (Quân Đội)</p>
+                            <p><strong>Số tài khoản:</strong> 123456789</p>
+                            <p><strong>Chủ tài khoản:</strong> CONG TY TNHH IN NHANH NEW VISION</p>
+                            <p><strong>Số tiền:</strong> 350.000đ</p>
+                        </div>
+                        <p class="qr-instruction">Quét mã QR để thanh toán:</p>
+                        <img src="https://api.vietqr.io/image/970422-123456789-V97Z9G3.jpg?accountName=CONG%20TY%20TNHH%20IN%20NHANH%20NEW%20VISION&amount=350000&addInfo=Thanh%20toan%20don%20hang" alt="Mã QR" class="qr-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkout-actions">
+                <a href="cart.html" class="btn-checkout-secondary">Quay lại</a>
+                <button type="submit" class="btn-checkout">Hoàn tất</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="app_checkout.js"></script>
+</body>
+</html>

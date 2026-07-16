@@ -11,7 +11,7 @@
     margin-bottom: 40px;
 }
 
-/* Hệ thống thẻ viên thuốc thông tin liên hệ */
+
 .contact-info-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -27,6 +27,47 @@
     align-items: center;
     padding: 0 25px;
     gap: 15px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-link {
+    position: relative; 
+    display: inline-block;
+    color: #445B8B; 
+    font-size: 26px;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+    padding: 4px;
+}
+
+
+.cart-link:hover {
+    color: #2a3d66;
+    transform: scale(1.08); 
+}
+
+.cart-count {
+    position: absolute;
+    top: -2px;     
+    right: -5px;    
+    background-color: #E65A5A; 
+    color: #ffffff;  
+    font-size: 11px; 
+    font-weight: 700;
+    font-family: 'Inter', sans-serif; 
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .pill-icon {
