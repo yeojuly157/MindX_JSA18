@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Nhanh Tầm Nhìn Mới - Báo giá</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_baogia.css">
+    <link rel="icon" type="image/png" href="img/logo_newvision.png">
+</head>
+<body>
+    <header class="header-top">
+        <div class="container header-top-wrapper">
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="cart">
+                <a href="cart.html" class="cart-link">
+                    <i class="bi bi-cart-fill"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+    <div class="container nav-wrapper">
+        <a href="index.html" class="nav-item"><i class="bi bi-house-door-fill"></i> Trang chủ</a>
+        
+        <div class="nav-item has-mega" id="dichVuMenu">
+            <a href="#" class="nav-link">
+                <i class="bi bi-grid-fill"></i> Dịch vụ <i class="bi bi-caret-down-fill arrow-icon" style="font-size: 12px;"></i>
+            </a>
+            <div class="mega-menu">
+                <div class="mega-menu-container">
+                    <div class="mega-column">
+                        <h3>Ấn phẩm bán hàng</h3>
+                        <ul>
+                            <li><a href="#">In túi giấy</a></li>
+                            <li><a href="#">In hộp giấy</a></li>
+                            <li><a href="#">In tag giấy - Mác vải</a></li>
+                            <li><a href="#">In voucher</a></li>
+                            <li><a href="#">In thẻ tích điểm</a></li>
+                            <li><a href="#">In thiệp cảm ơn</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-column">
+                        <h3>Ấn phẩm quảng cáo</h3>
+                        <ul>
+                            <li><a href="#">In tờ rơi</a></li>
+                            <li><a href="#">In phong bì</a></li>
+                            <li><a href="#">In catalogue</a></li>
+                            <li><a href="#">In card visit</a></li>
+                            <li><a href="#">In kẹp file</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-column">
+                        <h3>Ấn phẩm khác</h3>
+                        <ul>
+                            <li><a href="#">In sticker dán</a></li>
+                            <li><a href="#">In sách / tạp chí</a></li>
+                            <li><a href="#">In kỷ yếu</a></li>
+                            <li><a href="#">In thiệp cưới</a></li>
+                            <li><a href="#">In menu</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-column">
+                        <h3>Ấn phẩm tết</h3>
+                        <ul>
+                            <li><a href="#">In lịch tết</a></li>
+                            <li><a href="#">In bao lì xì tết</a></li>
+                            <li><a href="#">In thiệp tết</a></li>
+                            <li><a href="#">In phong bì tết</a></li>
+                            <li><a href="#">In túi quà tết</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="bao_gia.html" class="nav-item active"><i class="bi bi-tags-fill"></i> Báo giá</a>
+        <a href="contact.html" class="nav-item"><i class="bi bi-telephone-fill"></i> Liên hệ</a>
+    </div>
+</nav>
+<section class="quote-section">
+        <div class="container">
+            <div class="quote-header">
+                <h1 class="quote-title">Nhận báo giá in ấn nhanh chóng</h1>
+                <p class="quote-subtitle">Chỉ cần điền thông tin cơ bản dưới đây, đội ngũ chúng tôi sẽ tính toán và gửi báo giá chi tiết nhất cho bạn qua Zalo trong thời gian sớm nhất.</p>
+            </div>
+
+            <div class="quote-container">
+                <!-- Form nhập liệu -->
+                <div class="quote-form-wrapper">
+                    <form id="quoteForm">
+                        <!-- Chọn sản phẩm -->
+                        <div class="quote-form-group">
+                            <label class="quote-label" for="productType">Chọn sản phẩm</label>
+                            <div class="quote-input-wrapper">
+                                <select id="productType" class="quote-select" required>
+                                    <option value="" disabled selected>-- Chọn loại sản phẩm --</option>
+                                    <option value="tem-nhan">In tem nhãn / Decal</option>
+                                    <option value="catalogue">In Catalogue</option>
+                                    <option value="card-visit">In Card Visit</option>
+                                    <option value="thiep-cam-on">In Thiệp cảm ơn / Thiệp cưới</option>
+                                    <option value="to-roi">In Tờ rơi / Tờ gấp</option>
+                                    <option value="tui-giay">In Túi giấy</option>
+                                    <option value="hop-giay">In Hộp giấy</option>
+                                    <option value="tag-giay">In Tag giấy - Mác vải</option>
+                                    <option value="voucher">In Voucher / Thẻ tích điểm</option>
+                                    <option value="phong-bi">In Phong bì</option>
+                                    <option value="kep-file">In Kẹp file</option>
+                                    <option value="sach">In Sách - Tạp chí</option>
+                                    <option value="ky-yeu">In Kỷ yếu</option>
+                                    <option value="menu">In Menu</option>
+                                    <option value="an-pham-tet">In Ẩn phẩm Tết</option>
+                                    <option value="khac">Khác</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Số lượng -->
+                        <div class="quote-form-group">
+                            <label class="quote-label" for="quantity">Số lượng</label>
+                            <div class="quote-input-wrapper">
+                                <input type="number" id="quantity" class="quote-input" placeholder="Ví dụ: 1000" min="1" required>
+                            </div>
+                        </div>
+
+                        <!-- Thông tin khác -->
+                        <div class="quote-form-group">
+                            <label class="quote-label" for="details">Thông tin khác<br><small style="font-size:14px; color:#666;">(Kích thước, chất liệu,...)</small></label>
+                            <div class="quote-input-wrapper">
+                                <input type="text" id="details" class="quote-input" placeholder="Ví dụ: Kích thước A5, giấy C200, cán mờ...">
+                            </div>
+                        </div>
+
+                        <!-- Số điện thoại -->
+                        <div class="quote-form-group">
+                            <label class="quote-label" for="phone">Số điện thoại (Zalo)</label>
+                            <div class="quote-input-wrapper">
+                                <input type="tel" id="phone" class="quote-input" placeholder="Nhập số điện thoại để nhận báo giá" required>
+                            </div>
+                        </div>
+
+                        <!-- File thiết kế -->
+                        <div class="quote-form-group">
+                            <label class="quote-label">File thiết kế (nếu có)</label>
+                            <div class="quote-input-wrapper">
+                                <input type="file" id="fileDesign" style="display: none;">
+                                <label for="fileDesign" class="file-upload-btn">
+                                    <i class="bi bi-upload"></i> Tải file lên
+                                </label>
+                                <span id="fileName" style="margin-left: 15px; font-family: 'Afacad', sans-serif; color: #666;"></span>
+                            </div>
+                        </div>
+
+                        <!-- Nút gửi -->
+                        <button type="submit" class="btn-submit-quote">Gửi yêu cầu</button>
+                    </form>
+                </div>
+
+                <!-- Banner bên phải -->
+                <div>
+                    <img src="https://i.pinimg.com/736x/a2/55/e3/a255e3543eacbdb5bee171d9518e4322.jpg" alt="Hình ảnh tư vấn in ấn" class="quote-banner">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3><i class="bi bi-building"></i> Công ty TNHH In Nhanh Tầm Nhìn Mới</h3>
+                <p><i class="bi bi-telephone-fill"></i> 0986880528 - 0936471266</p>
+                <p><i class="bi bi-envelope-fill"></i> inantamnhinmoi1026@gmail.com</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Số 9 Ngõ 1 Tân Triều, Thanh Liệt, Hà Nội</p>
+            </div>
+
+            <div class="footer-col">
+                <h3><i class="bi bi-printer-fill"></i> Sản phẩm nổi bật</h3>
+                <ul>
+                    <li><a href="#">In tem nhãn</a></li>
+                    <li><a href="#">In catalogue</a></li>
+                    <li><a href="#">In card visit</a></li>
+                    <li><a href="#">In thiệp cảm ơn</a></li>
+                    <li><a href="#">In tờ rơi, tờ gấp</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3><i class="bi bi-link-45deg"></i> Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Báo giá</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3><i class="bi bi-globe"></i> Mạng xã hội</h3>
+                <div class="social-icons">
+                    <a href="#" class="icon-fb"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="icon-messenger"><i class="bi bi-messenger"></i></a>
+                    <a href="#" class="icon-zalo">Zalo</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© Bản quyền thuộc về Công ty TNHH In Nhanh Tầm Nhìn Mới</p>
+            </div>
+        </div>
+    </footer>
+</html>
