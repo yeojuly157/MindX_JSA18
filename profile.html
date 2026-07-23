@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Nhanh Tầm Nhìn Mới - Hồ Sơ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_profile.css">
+    <link rel="icon" type="image/png" href="img/logo_newvision.png">
+    <link rel="stylesheet" href="styles_cart.css">
+</head>
+<body class="profile-page">
+
+    <!-- HEADER TOP -->
+    <header class="header-top">
+        <div class="container header-top-wrapper">
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="cart">
+                <a href="cart.html" class="cart-link">
+                    <i class="bi bi-cart-fill"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="nav-bar">
+        <div class="container nav-wrapper">
+            <a href="index.html" class="nav-item"><i class="bi bi-house-door-fill"></i> Trang chủ</a>        
+            <div class="nav-item has-mega" id="dichVuMenu">
+                <a href="#" class="nav-link">
+                    <i class="bi bi-grid-fill"></i> Dịch vụ <i class="bi bi-caret-down-fill arrow-icon" style="font-size: 12px;"></i>
+                </a>
+                <div class="mega-menu">
+                    <div class="mega-menu-container">
+                        <div class="mega-column">
+                            <h3>Ấn phẩm bán hàng</h3>
+                            <ul>
+                                <li><a href="product.html?id=tui-giay">In túi giấy</a></li>
+                                <li><a href="#">In hộp giấy</a></li>
+                                <li><a href="#">In tag giấy - Mác vải</a></li>
+                                <li><a href="#">In voucher</a></li>
+                                <li><a href="#">In thẻ tích điểm</a></li>
+                                <li><a href="#">In thiệp cảm ơn</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Ấn phẩm quảng cáo</h3>
+                            <ul>
+                                <li><a href="#">In tờ rơi</a></li>
+                                <li><a href="#">In phong bì</a></li>
+                                <li><a href="#">In catalogue</a></li>
+                                <li><a href="#">In card visit</a></li>
+                                <li><a href="#">In kẹp file</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Ấn phẩm khác</h3>
+                            <ul>
+                                <li><a href="#">In sticker dán</a></li>
+                                <li><a href="#">In sách / tạp chí</a></li>
+                                <li><a href="#">In kỷ yếu</a></li>
+                                <li><a href="#">In thiệp cưới</a></li>
+                                <li><a href="#">In menu</a></li>
+                            </ul>
+                        </div>
+                        <div class="mega-column">
+                            <h3>Ấn phẩm tết</h3>
+                            <ul>
+                                <li><a href="#">In lịch tết</a></li>
+                                <li><a href="#">In bao lì xì tết</a></li>
+                                <li><a href="#">In thiệp tết</a></li>
+                                <li><a href="#">In phong bì tết</a></li>
+                                <li><a href="#">In túi quà tết</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="bao_gia.html" class="nav-item"><i class="bi bi-tags-fill"></i> Báo giá</a>
+            <a href="contact.html" class="nav-item"><i class="bi bi-telephone-fill"></i> Liên hệ</a>
+        </div>
+    </nav>
+
+    <!-- PHẦN NỘI DUNG CHÍNH (MAIN) -->
+    <main class="profile-container container">
+        
+        <!-- SUB-NAV ĐIỀU HƯỚNG TÀI KHỎAN -->
+<div class="container">
+    <nav class="account-nav">
+        <a href="profile.html" class="account-nav-item active"><i class="bi bi-person-fill"></i> Hồ sơ của bạn</a>
+        <a href="cart.html" class="account-nav-item"><i class="bi bi-cart-fill"></i> Giỏ hàng hiện tại</a>
+    </nav>
+</div>
+
+        <div class="profile-card-box">
+            
+            <aside class="profile-sidebar">
+                <div class="user-avatar-box">
+                    <div class="avatar-wrapper">
+                        <img src="https://i.pinimg.com/originals/bc/43/98/bc439871417621836a0eeea768d60944.jpg?nii=t" id="userAvatar" alt="Avatar">
+                        <label for="avatarInput" class="btn-change-avatar" title="Đổi ảnh đại diện">
+                            <i class="bi bi-camera-fill"></i>
+                        </label>
+                        <input type="file" id="avatarInput" accept="image/*" hidden>
+                    </div>
+                </div>
+
+                <ul class="profile-menu">
+                    <li class="menu-item active" onclick="switchTab('infoTab', this)">
+                        <i class="bi bi-person-lines-fill"></i> Thông tin cá nhân
+                    </li>
+                    <li class="menu-item logout-btn" onclick="logout()">
+                        <i class="bi bi-box-arrow-right"></i> Đăng xuất
+                    </li>
+                </ul>
+            </aside>
+            <section class="profile-content">
+                
+                <div id="infoTab" class="tab-pane active">
+                    <h2 class="tab-title">Chỉnh sửa thông tin cá nhân</h2>
+                    <form id="profileForm">
+                        <div class="form-group">
+                            <label for="profileName">Họ và tên</label>
+                            <div class="input-icon-wrapper">
+                                <i class="bi bi-person"></i>
+                                <input type="text" id="profileName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="profileEmail">Email</label>
+                            <div class="input-icon-wrapper">
+                                <i class="bi bi-envelope"></i>
+                                <input type="email" id="profileEmail"  required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="profilePhone">Số điện thoại</label>
+                            <div class="input-icon-wrapper">
+                                <i class="bi bi-telephone"></i>
+                                <input type="tel" id="profilePhone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="profileAddress">Địa chỉ mặc định</label>
+                            <div class="input-icon-wrapper">
+                                <i class="bi bi-geo-alt"></i>
+                                <input type="text" id="profileAddress" required>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-save"><i class="bi bi-check2-circle"></i> Lưu thay đổi</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER MAIN -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3><i class="bi bi-building"></i> Công ty TNHH In Nhanh Tầm Nhìn Mới</h3>
+                <p><i class="bi bi-telephone-fill"></i> 0986880528 - 0936471266</p>
+                <p><i class="bi bi-envelope-fill"></i> inantamnhinmoi1026@gmail.com</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Số 9 Ngõ 1 Tân Triều, Thanh Liệt, Hà Nội</p>
+            </div>
+
+            <div class="footer-col">
+                <h3><i class="bi bi-printer-fill"></i> Sản phẩm nổi bật</h3>
+                <ul>
+                    <li><a href="#">In tem nhãn</a></li>
+                    <li><a href="#">In catalogue</a></li>
+                    <li><a href="#">In card visit</a></li>
+                    <li><a href="#">In thiệp cảm ơn</a></li>
+                    <li><a href="#">In tờ rơi, tờ gấp</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3><i class="bi bi-link-45deg"></i> Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="bao_gia.html">Báo giá</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3><i class="bi bi-globe"></i> Mạng xã hội</h3>
+                <div class="social-icons">
+                    <a href="#" class="icon-fb"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="icon-messenger"><i class="bi bi-messenger"></i></a>
+                    <a href="#" class="icon-zalo">Zalo</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© Bản quyền thuộc về Công ty TNHH In Nhanh Tầm Nhìn Mới</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app_profile.js"></script>
+</body>
+</html>
