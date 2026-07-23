@@ -1,167 +1,200 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In Nhanh Tầm Nhìn Mới - Chi Tiết Sản Phẩm</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles_product.css">
-    <link rel="icon" type="image/png" href="img/logo_newvision.png">
-</head>
-<body>
-    <header class="header-top">
-        <div class="container header-top-wrapper">
-            <img src="img/logo.png" alt="Logo" class="logo-img">
-            <div class="search-box">
-                <input type="text" placeholder="Tìm kiếm...">
-                <i class="bi bi-search"></i>
-            </div>
-            <div class="cart">
-                <a href="cart.html" class="cart-link">
-                    <i class="bi bi-cart-fill"></i>
-                    <span class="cart-count">0</span>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <nav class="nav-bar">
-    <div class="container nav-wrapper">
-        <a href="index.html" class="nav-item"><i class="bi bi-house-door-fill"></i> Trang chủ</a>
-        
-        <div class="nav-item has-mega" id="dichVuMenu">
-            <a href="#" class="nav-link">
-                <i class="bi bi-grid-fill"></i> Dịch vụ <i class="bi bi-caret-down-fill arrow-icon" style="font-size: 12px;"></i>
-            </a>
-            <div class="mega-menu">
-                <div class="mega-menu-container">
-                    <div class="mega-column">
-                        <h3>Ấn phẩm bán hàng</h3>
-                        <ul>
-                            <li><a href="product.html?id=tui-giay">In túi giấy</a></li>
-                            <li><a href="#">In hộp giấy</a></li>
-                            <li><a href="#">In tag giấy - Mác vải</a></li>
-                            <li><a href="#">In voucher</a></li>
-                            <li><a href="#">In thẻ tích điểm</a></li>
-                            <li><a href="#">In thiệp cảm ơn</a></li>
-                        </ul>
-                    </div>
-                    <div class="mega-column">
-                        <h3>Ấn phẩm quảng cáo</h3>
-                        <ul>
-                            <li><a href="#">In tờ rơi</a></li>
-                            <li><a href="#">In phong bì</a></li>
-                            <li><a href="#">In catalogue</a></li>
-                            <li><a href="#">In card visit</a></li>
-                            <li><a href="#">In kẹp file</a></li>
-                        </ul>
-                    </div>
-                    <div class="mega-column">
-                        <h3>Ấn phẩm khác</h3>
-                        <ul>
-                            <li><a href="#">In sticker dán</a></li>
-                            <li><a href="#">In sách / tạp chí</a></li>
-                            <li><a href="#">In kỷ yếu</a></li>
-                            <li><a href="#">In thiệp cưới</a></li>
-                            <li><a href="#">In menu</a></li>
-                        </ul>
-                    </div>
-                    <div class="mega-column">
-                        <h3>Ấn phẩm tết</h3>
-                        <ul>
-                            <li><a href="#">In lịch tết</a></li>
-                            <li><a href="#">In bao lì xì tết</a></li>
-                            <li><a href="#">In thiệp tết</a></li>
-                            <li><a href="#">In phong bì tết</a></li>
-                            <li><a href="#">In túi quà tết</a></li>
-                        </ul>
-                    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>In Nhanh Tầm Nhìn Mới - Chi Tiết Sản Phẩm</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles_product.css">
+        <link rel="icon" type="image/png" href="img/logo_newvision.png">
+    </head>
+    <body>
+        <header class="header-top">
+            <div class="container header-top-wrapper">
+                <img src="img/logo.png" alt="Logo" class="logo-img">
+                <div class="search-box">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <i class="bi bi-search"></i>
+                </div>
+                <div class="header-actions">
+                    <a href="profile.html"
+                        class="header-action-item profile-link"
+                        title="Hồ sơ của bạn">
+                        <i class="bi bi-person-fill"></i>
+                    </a>
+                    <a href="cart.html" class="header-action-item cart-link"
+                        title="Giỏ hàng">
+                        <i class="bi bi-cart-fill"></i>
+                        <span class="cart-count">0</span>
+                    </a>
                 </div>
             </div>
-        </div>
-        <a href="bao_gia.html" class="nav-item"><i class="bi bi-tags-fill"></i> Báo giá</a>
-        <a href="contact.html" class="nav-item"><i class="bi bi-telephone-fill"></i> Liên hệ</a>
-    </div>
-</nav>
-    <!-- KHU VỰC SẢN PHẨM CHÍNH -->
-    <section class="product-page-section">
-        <div class="container product-layout">
-            
-            <!-- Cột Trái: 2 Ảnh xếp dọc -->
-            <div class="product-images-col">
-                <img id="productImg1" src="" alt="Ảnh sản phẩm 1" class="product-img-card">
-                <img id="productImg2" src="" alt="Ảnh sản phẩm 2" class="product-img-card">
+        </header>
+
+        <nav class="nav-bar">
+            <div class="container nav-wrapper">
+                <a href="index.html" class="nav-item"><i
+                        class="bi bi-house-door-fill"></i> Trang chủ</a>
+
+                <div class="nav-item has-mega" id="dichVuMenu">
+                    <a href="#" class="nav-link">
+                        <i class="bi bi-grid-fill"></i> Dịch vụ <i
+                            class="bi bi-caret-down-fill arrow-icon"
+                            style="font-size: 12px;"></i>
+                    </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-container">
+                            <div class="mega-column">
+                                <h3>Ấn phẩm bán hàng</h3>
+                                <ul>
+                                    <li><a href="product.html?id=tui-giay">In
+                                            túi giấy</a></li>
+                                    <li><a href="#">In hộp giấy</a></li>
+                                    <li><a href="#">In tag giấy - Mác
+                                            vải</a></li>
+                                    <li><a href="#">In voucher</a></li>
+                                    <li><a href="#">In thẻ tích điểm</a></li>
+                                    <li><a href="#">In thiệp cảm ơn</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3>Ấn phẩm quảng cáo</h3>
+                                <ul>
+                                    <li><a href="#">In tờ rơi</a></li>
+                                    <li><a href="#">In phong bì</a></li>
+                                    <li><a href="#">In catalogue</a></li>
+                                    <li><a href="#">In card visit</a></li>
+                                    <li><a href="#">In kẹp file</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3>Ấn phẩm khác</h3>
+                                <ul>
+                                    <li><a href="#">In sticker dán</a></li>
+                                    <li><a href="#">In sách / tạp chí</a></li>
+                                    <li><a href="#">In kỷ yếu</a></li>
+                                    <li><a href="#">In thiệp cưới</a></li>
+                                    <li><a href="#">In menu</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h3>Ấn phẩm tết</h3>
+                                <ul>
+                                    <li><a href="#">In lịch tết</a></li>
+                                    <li><a href="#">In bao lì xì tết</a></li>
+                                    <li><a href="#">In thiệp tết</a></li>
+                                    <li><a href="#">In phong bì tết</a></li>
+                                    <li><a href="#">In túi quà tết</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="bao_gia.html" class="nav-item"><i
+                        class="bi bi-tags-fill"></i> Báo giá</a>
+                <a href="contact.html" class="nav-item"><i
+                        class="bi bi-telephone-fill"></i> Liên hệ</a>
             </div>
+        </nav>
+        <!-- KHU VỰC SẢN PHẨM CHÍNH -->
+        <section class="product-page-section">
+            <div class="container product-layout">
 
-            <!-- Cột Phải: Nội dung chi tiết & Đặt hàng -->
-<div class="product-info-col">
-    <h1 id="productTitle" class="product-main-title">Đang tải...</h1>
+                <!-- Cột Trái: 2 Ảnh xếp dọc -->
+                <div class="product-images-col">
+                    <img id="productImg1" src alt="Ảnh sản phẩm 1"
+                        class="product-img-card">
+                    <img id="productImg2" src alt="Ảnh sản phẩm 2"
+                        class="product-img-card">
+                </div>
 
-    <!-- Mô tả -->
-    <div class="info-block">
-        <div class="info-block-title">Mô tả</div>
-        <p id="productDesc" class="info-block-desc"></p>
-    </div>
+                <!-- Cột Phải: Nội dung chi tiết & Đặt hàng -->
+                <div class="product-info-col">
+                    <h1 id="productTitle" class="product-main-title">Đang
+                        tải...</h1>
 
-    <!-- Thông số -->
-    <div class="info-block">
-        <div class="info-block-title">Thông số</div>
-        <ul id="productSpecs" class="specs-list"></ul>
-    </div>
+                    <!-- Mô tả -->
+                    <div class="info-block">
+                        <div class="info-block-title">Mô tả</div>
+                        <p id="productDesc" class="info-block-desc"></p>
+                    </div>
 
-    <!-- ===== KHU VỰC ĐẶT HÀNG / THÊM GIỎ HÀNG ===== -->
-    <div class="product-action-box">
-        
-        <!-- 1. Ô Chọn Số Lượng -->
-        <div class="action-item">
-            <label class="action-label">Số lượng:</label>
-            <div class="quantity-control">
-                <input type="number" id="productQuantity" value="1" min="1" class="input-qty">
+                    <!-- Thông số -->
+                    <div class="info-block">
+                        <div class="info-block-title">Thông số</div>
+                        <ul id="productSpecs" class="specs-list"></ul>
+                    </div>
+
+                    <!-- ===== KHU VỰC ĐẶT HÀNG / THÊM GIỎ HÀNG ===== -->
+                    <div class="product-action-box">
+
+                        <!-- 1. Ô Chọn Số Lượng -->
+                        <div class="action-item">
+                            <label class="action-label">Số lượng:</label>
+                            <div class="quantity-control">
+                                <input type="number" id="productQuantity"
+                                    value="1" min="1" class="input-qty">
+                            </div>
+                        </div>
+
+                        <!-- 2. Đăng Tải File Thiết Kế -->
+                        <div class="action-item">
+                            <label class="action-label">File thiết kế (nếu
+                                có)</label>
+                            <div class="file-upload-wrapper">
+                                <input type="file" id="designFile"
+                                    class="file-input-hidden">
+                                <label for="designFile" class="btn-file-upload">
+                                    <i class="bi bi-cloud-arrow-up-fill"></i>
+                                    Tải file lên
+                                </label>
+                                <span id="fileNameDisplay"
+                                    class="file-name-display">Chưa chọn
+                                    file</span>
+                            </div>
+                        </div>
+
+                        <div class="total-price-box">
+                            <span class="total-label">Thành tiền tạm
+                                tính:</span>
+                            <span id="totalPrice" class="total-amount">0
+                                đ</span>
+                        </div>
+
+                        <!-- 4. Nút Thêm Vào Giỏ Hàng -->
+                        <button type="button" id="btnAddToCart"
+                            class="btn-add-to-cart">
+                            <i class="bi bi-cart-plus-fill"></i> Thêm vào giỏ
+                            hàng
+                        </button>
+
+                    </div>
+                </div>
+
             </div>
-        </div>
-
-        <!-- 2. Đăng Tải File Thiết Kế -->
-        <div class="action-item">
-            <label class="action-label">File thiết kế (nếu có)</label>
-            <div class="file-upload-wrapper">
-                <input type="file" id="designFile" class="file-input-hidden">
-                <label for="designFile" class="btn-file-upload">
-                    <i class="bi bi-cloud-arrow-up-fill"></i> Tải file lên
-                </label>
-                <span id="fileNameDisplay" class="file-name-display">Chưa chọn file</span>
-            </div>
-        </div>
-
-        <div class="total-price-box">
-        <span class="total-label">Thành tiền tạm tính:</span>
-        <span id="totalPrice" class="total-amount">0 đ</span>
-    </div>
-
-    <!-- 4. Nút Thêm Vào Giỏ Hàng -->
-    <button type="button" id="btnAddToCart" class="btn-add-to-cart">
-        <i class="bi bi-cart-plus-fill"></i> Thêm vào giỏ hàng
-    </button>
-
-    </div>
-</div>
-
-        </div>
-    </section>
-    <script src="data.js"></script>
-    <script src="app_product.js"></script>
-    <script src="app_cart.js"></script>
-</body>
+        </section>
+        <script src="data.js"></script>
+        <script src="app_product.js"></script>
+        <script src="app_cart.js"></script>
+    </body>
     <footer class="main-footer">
         <div class="container footer-grid">
             <div class="footer-col">
-                <h3><i class="bi bi-building"></i> Công ty TNHH In Nhanh Tầm Nhìn Mới</h3>
-                <p><i class="bi bi-telephone-fill"></i> 0986880528 - 0936471266</p>
-                <p><i class="bi bi-envelope-fill"></i> inantamnhinmoi1026@gmail.com</p>
-                <p><i class="bi bi-geo-alt-fill"></i> Số 9 Ngõ 1 Tân Triều, Thanh Liệt, Hà Nội</p>
+                <h3><i class="bi bi-building"></i> Công ty TNHH In Nhanh Tầm
+                    Nhìn Mới</h3>
+                <p><i class="bi bi-telephone-fill"></i> 0986880528 -
+                    0936471266</p>
+                <p><i class="bi bi-envelope-fill"></i>
+                    inantamnhinmoi1026@gmail.com</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Số 9 Ngõ 1 Tân Triều,
+                    Thanh Liệt, Hà Nội</p>
             </div>
 
             <div class="footer-col">
@@ -187,8 +220,10 @@
             <div class="footer-col">
                 <h3><i class="bi bi-globe"></i> Mạng xã hội</h3>
                 <div class="social-icons">
-                    <a href="#" class="icon-fb"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="icon-messenger"><i class="bi bi-messenger"></i></a>
+                    <a href="#" class="icon-fb"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="#" class="icon-messenger"><i
+                            class="bi bi-messenger"></i></a>
                     <a href="#" class="icon-zalo">Zalo</a>
                 </div>
             </div>

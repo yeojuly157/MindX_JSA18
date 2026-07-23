@@ -483,7 +483,7 @@ body {
     transition: transform 0.4s ease;
 }
 
-/* Hiệu ứng Hover lướt qua nhẹ nhàng */
+
 .popular-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 25px rgba(68, 91, 139, 0.15);
@@ -492,3 +492,26 @@ body {
 .popular-card:hover img {
     transform: scale(1.03);
 }
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.header-action-item {
+    position: relative;
+    color: #445b8b; 
+    font-size: 24px; 
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.header-action-item:hover {
+    color: #2d4373;
+    transform: translateY(-2px);
+}
+
+
