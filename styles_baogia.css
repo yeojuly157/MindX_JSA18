@@ -140,3 +140,10 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     margin-left: 20px; 
 }
+
+.file-name-display {
+    font-size: 16px;
+    color: #64748B;
+    font-style: italic;
+    margin-left: 10px;
+}

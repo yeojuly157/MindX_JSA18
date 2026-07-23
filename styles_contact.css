@@ -11,6 +11,18 @@
     margin-bottom: 40px;
 }
 
+.contact-subheading {
+    font-family: 'Afacad', sans-serif;
+    font-size: 28px; 
+    font-weight: 700; 
+    color: #445B8B; 
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #445B8B; 
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
 .contact-info-grid {
     display: grid;

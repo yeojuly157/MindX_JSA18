@@ -428,112 +428,67 @@ body {
 .arrow-icon {
     transition: transform 0.25s ease;
 }
-@media (max-width: 768px) {
-    
-    .header-top-wrapper {
-        flex-direction: column;
-        gap: 12px;
-        padding: 10px;
-    }
-    
-    .search-box {
-        width: 100%; 
-        max-width: 300px;
-    }
-    
-    .auth-btn {
-        font-size: 16px; 
-    }
 
-    .nav-wrapper {
-        flex-wrap: wrap; 
-        justify-content: center;
-        gap: 10px 15px; 
-        padding: 10px;
-    }
+.popular-products-section {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
 
-    .nav-item {
-        font-size: 16px; 
-        padding: 8px 12px;
-    }
-    
-    .nav-item i {
-        font-size: 16px;
-    }
+.popular-products-section .section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #3b4d71; /* Tông màu xanh đậm trùng thiết kế */
+    margin-bottom: 40px;
+    font-family: 'Afacad', sans-serif;
+}
 
-    .hero-wrapper {
-        flex-direction: column;
-        height: auto;
-    }
+/* Lưới hiển thị các thẻ */
+.popular-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-    .hero-left {
-        flex: 0 0 100%;
-        width: 100%;
-        padding: 40px 20px;
-        text-align: center; 
-        align-items: center;
-    }
+/* Cấu trúc từng Card ảnh */
+.popular-card {
+    flex: 0 0 calc(33.333% - 16px); /* 3 cột trên hàng 1 */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #f8fafc;
+}
 
-    .hero-left h2 {
-        font-size: 28px;
-        color: #704811;
-        margin-bottom: 15px;
-    }
+/* 2 card hàng dưới rộng hơn một chút */
+.popular-card.card-wide {
+    flex: 0 0 calc(38% - 16px);
+}
 
-    .hero-left p {
-        font-size: 16px;
-        color: #704811;
-        line-height: 1.5;
-        margin-bottom: 25px;
-    }
+.popular-card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 
-    .hero-right {
-        display: none !important;
-    }
+.popular-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
 
-    .hero-section {
-        background: #F5DAB1 !important; 
-        margin-top: 15px;
-        margin-bottom: 30px;
-        border-radius: 12px; 
-    }
+/* Hiệu ứng Hover lướt qua nhẹ nhàng */
+.popular-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(68, 91, 139, 0.15);
+}
 
-    .btn-quote {
-        margin: 0 auto;
-    }
-
-    .features-grid {
-        grid-template-columns: 1fr; 
-        gap: 20px;
-        padding: 0 10px;
-    }
-
-    .hero-wrapper {
-        height: auto;
-        padding: 0;
-    }
-    
-    .feature-card {
-        border-radius: 25px; 
-        padding: 25px 15px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: center;
-    }
-    
-    .footer-col p {
-        justify-content: center; 
-    }
-    
-    .social-icons {
-        justify-content: center; 
-    }
-    
-    .footer-bottom {
-        font-size: 16px; 
-        padding: 12px 10px;
-    }
+.popular-card:hover img {
+    transform: scale(1.03);
 }
