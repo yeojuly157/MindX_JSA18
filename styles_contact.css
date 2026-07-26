@@ -159,7 +159,6 @@
     color: #445B8B;
 }
 
-/* Nút submit đẩy sát sang phải giống thiết kế */
 .btn-submit {
     align-self: flex-end;
     width: 110px;
@@ -179,7 +178,7 @@
     background-color: #2b3d63;
 }
 
-/* Khung hiển thị bản đồ */
+
 .contact-map {
     width: 532px;
     height: 430px;
@@ -194,21 +193,3 @@
     border: 0;
 }
 
-/* Responsive cơ bản nếu thu nhỏ màn hình */
-@media (max-width: 992px) {
-    .contact-info-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-    .contact-details-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-    .contact-form, .contact-map {
-        width: 100%;
-        max-width: 100%;
-    }
-    .contact-map {
-        height: 350px;
-    }
-}

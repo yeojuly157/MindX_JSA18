@@ -6,11 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function renderCart() {
     const cartContent = document.getElementById("cartContent");
     if (!cartContent) return;
-
-    // Lấy giỏ hàng từ localStorage
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    // Trường hợp GIỎ HÀNG TRỐNG
     if (cart.length === 0) {
         cartContent.innerHTML = `
             <div style="text-align: center; padding: 60px 20px; background: #ffffff; border-radius: 16px; border: 1px solid #e2e8f0; margin: 30px 0;">
@@ -26,7 +22,6 @@ function renderCart() {
         return;
     }
 
-    // Trường hợp CÓ SẢN PHẨM trong giỏ
     let grandTotal = 0;
     let itemsHTML = "";
 
@@ -70,8 +65,6 @@ function renderCart() {
             </div>
         `;
     });
-
-    // Render toàn bộ HTML giỏ hàng và tổng tiền
     cartContent.innerHTML = `
         <div class="cart-wrapper" style="margin: 30px 0;">
             <!-- Danh sách món hàng -->
@@ -100,9 +93,6 @@ function renderCart() {
     updateHeaderCartBadge();
 }
 
-/**
- * 2. Cập nhật số đếm sản phẩm trên Icon Giỏ hàng ở Header
- */
 function updateHeaderCartBadge() {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     const cartBadge = document.querySelector(".cart-count");

@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     checkLoginAndRender();
-
-    // Xử lý chuyển tab
     window.switchTab = function (tabId, element) {
         document.querySelectorAll(".tab-pane").forEach(pane => pane.classList.remove("active"));
         document.querySelectorAll(".menu-item").forEach(item => item.classList.remove("active"));
@@ -10,22 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
         if (targetTab) targetTab.classList.add("active");
         if (element) element.classList.add("active");
     };
-
-    // Form cập nhật thông tin
     const profileForm = document.getElementById("profileForm");
     if (profileForm) {
         profileForm.addEventListener("submit", function (e) {
             e.preventDefault();
-
-            // Lấy object hiện tại hoặc tạo mới
             let currentUser = JSON.parse(localStorage.getItem("user")) || {};
 
             currentUser.fullname = document.getElementById("profileName").value.trim();
             currentUser.email = document.getElementById("profileEmail").value.trim();
             currentUser.phone = document.getElementById("profilePhone").value.trim();
             currentUser.address = document.getElementById("profileAddress").value.trim();
-
-            // Lưu lại vào đúng key 'user'
             localStorage.setItem("user", JSON.stringify(currentUser));
 
             updateSidebarUI(currentUser);
@@ -35,12 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function checkLoginAndRender() {
-    // Lấy dữ liệu user từ LocalStorage
     const savedUser = JSON.parse(localStorage.getItem("user"));
-
     const profileCardBox = document.querySelector(".profile-card-box");
-
-    // Điều kiện: Nếu không có user HOẶC trạng thái isLoggedIn = false
     if (!savedUser || savedUser.isLoggedIn === false || (!savedUser.fullname && !savedUser.email)) {
         if (profileCardBox) {
             profileCardBox.innerHTML = `
@@ -60,7 +48,6 @@ function checkLoginAndRender() {
     }
     fillProfileData(savedUser);
 }
-
 function fillProfileData(user) {
     const name = user.fullname || user.name || "";
 

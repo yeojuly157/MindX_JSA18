@@ -12,7 +12,6 @@
     margin: 0 auto;
 }
 
-/* Cột bên trái: 2 Tấm ảnh xếp dọc */
 .product-images-col {
     display: flex;
     flex-direction: column;
@@ -26,11 +25,9 @@
     height: 320px;
     object-fit: cover;
     border-radius: 36px;
-    /* Bo góc 36px đúng như bản Figma */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
-/* Cột bên phải: Nội dung chi tiết */
 .product-info-col {
     flex: 1;
     padding-top: 10px;
@@ -60,7 +57,6 @@
     line-height: 1.6;
 }
 
-/* Danh sách thông số dạng bullet dots */
 .specs-list {
     padding-left: 20px;
     margin: 8px 0;
@@ -79,7 +75,6 @@
     color: #334155;
 }
 
-/* Nút Nhận báo giá */
 .btn-quote-action {
     display: inline-block;
     background-color: #445B8B;
@@ -99,7 +94,6 @@
     transform: translateY(-2px);
 }
 
-/* Khung bọc khu vực đặt hàng */
 .product-action-box {
     margin-top: 30px;
     padding-top: 20px;
@@ -121,7 +115,6 @@
     color: #445B8B;
 }
 
-/* Style Ô Chọn Số Lượng */
 .quantity-control {
     display: flex;
     align-items: center;
@@ -160,7 +153,6 @@
     outline: none;
 }
 
-/* Style Khu Vực Tải File */
 .file-upload-wrapper {
     display: flex;
     align-items: center;
@@ -197,7 +189,6 @@
     font-style: italic;
 }
 
-/* Style Nút Thêm Vào Giỏ Hàng */
 .btn-add-to-cart {
     display: inline-flex;
     align-items: center;

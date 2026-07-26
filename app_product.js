@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // 1. LẤY SẢN PHẨM TỪ URL
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id') || 'tui-giay';
 
@@ -10,8 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("productTitle").textContent = "Sản phẩm không tồn tại!";
         return;
     }
-
-    // Đổ dữ liệu sản phẩm
     document.getElementById("productTitle").textContent = product.title || "";
     document.getElementById("productDesc").textContent = product.desc || "";
     
@@ -23,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (img1 && product.image1) img1.src = product.image1;
     if (img2 && product.image2) img2.src = product.image2;
 
-    // Render thông số
     const specsList = document.getElementById("productSpecs");
     if (specsList && product.specs) {
         specsList.innerHTML = "";
@@ -34,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // 2. XỬ LÝ TÍNH TỔNG TIỀN THEO Ô SỐ LƯỢNG
     const qtyInput = document.getElementById("productQuantity");
     const totalPriceEl = document.getElementById("totalPrice");
     const unitPrice = product.pricePerUnit || 0;
@@ -49,16 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
         totalPriceEl.textContent = total.toLocaleString('vi-VN') + " đ";
     }
 
-    // Bắt sự kiện khi gõ hoặc bấm mũi tên thay đổi số
     if (qtyInput) {
         qtyInput.addEventListener("input", updateTotalPrice);
         qtyInput.addEventListener("change", updateTotalPrice);
     }
-
-    // Tính tiền ban đầu
     updateTotalPrice();
-
-    // 3. XỬ LÝ FILE DESIGN
     const fileInput = document.getElementById("designFile") || document.getElementById("fileDesign");
     const fileNameDisplay = document.getElementById("fileNameDisplay");
 
@@ -75,9 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-
-    // 4. XỬ LÝ THÊM VÀO GIỎ HÀNG
-    // NÚT THÊM VÀO GIỎ HÀNG
 const btnAddToCart = document.getElementById("btnAddToCart");
 if (btnAddToCart) {
     btnAddToCart.addEventListener("click", function () {
@@ -98,14 +85,9 @@ if (btnAddToCart) {
             fileName: fileName,
             image: imgUrl
         };
-
-        // Lấy giỏ hàng cũ từ localStorage
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
         cart.push(cartItem);
-        
-        // Lưu giỏ hàng mới vào localStorage
         localStorage.setItem("cart", JSON.stringify(cart));
-
         alert(`Đã thêm "${titleName}" (${quantity} cái) vào giỏ hàng!`);
     });
 }

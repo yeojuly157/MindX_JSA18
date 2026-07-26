@@ -6,7 +6,6 @@
     padding-bottom: 50px;
 }
 
-/* Khung trắng chính bao 2 cột */
 .checkout-card-box {
     background: #ffffff;
     border: 1.5px solid #a3b8cc;
@@ -16,7 +15,6 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
 }
 
-/* Grid 2 cột */
 .checkout-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -31,7 +29,6 @@
     margin-bottom: 24px;
 }
 
-/* --- CỘT TRÁI: FORM NHẬP THÔNG TIN --- */
 .form-group {
     margin-bottom: 20px;
 }
@@ -75,7 +72,6 @@
     box-shadow: 0 0 0 3px rgba(68, 91, 139, 0.15);
 }
 
-/* --- CỘT PHẢI: PHƯƠNG THỨC THANH TOÁN --- */
 .checkout-right {
     background: #f8fafc;
     border: 1.5px solid #cbd5e1;
@@ -130,9 +126,8 @@
     font-size: 18px;
 }
 
-/* --- KHUNG VIETQR THÔNG TIN NGÂN HÀNG --- */
 .qr-container {
-    display: none; /* Mặc định ẩn */
+    display: none; 
     margin-top: 15px;
     padding: 20px;
     background: #ffffff;
@@ -142,7 +137,7 @@
 }
 
 .qr-container.active {
-    display: block; /* Hiện khi chọn Chuyển khoản */
+    display: block; 
 }
 
 .bank-details p {
@@ -172,7 +167,6 @@
     background: #fff;
 }
 
-/* --- NÚT BẤM (BUTTONS) --- */
 .checkout-actions {
     display: flex;
     align-items: center;

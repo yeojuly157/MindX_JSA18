@@ -79,7 +79,6 @@
     box-shadow: 0 0 0 3px rgba(68, 91, 139, 0.15);
 }
 
-/* Input Upload File */
 .file-upload-btn {
     display: inline-flex;
     align-items: center;
@@ -102,7 +101,6 @@
     border-color: #445B8B;
 }
 
-/* Nút Gửi yêu cầu */
 .btn-submit-quote {
     background-color: #445B8B;
     color: #ffffff;
@@ -116,7 +114,6 @@
     transition: all 0.2s ease;
     margin-top: 10px;
     margin-left: 220px;
-    /* Thẳng hàng với input */
     box-shadow: 0 4px 12px rgba(68, 91, 139, 0.25);
 }
 

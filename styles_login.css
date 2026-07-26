@@ -191,15 +191,3 @@ body {
     outline: none;
     transition: all 0.2s;
 }
-
-@media (max-width: 900px) {
-    .hero-section {
-        display: none; 
-    }
-    .form-header h1 {
-        font-size: 36px;
-    }
-    .form-header p {
-        font-size: 18px;
-    }
-}
