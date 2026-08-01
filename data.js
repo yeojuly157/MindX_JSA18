@@ -13,9 +13,9 @@ const productsData = {
     },
     "hop-giay": {
         title: "In Hộp Giấy Theo Yêu Cầu",
-        desc: "test",
+        desc: "Test",
         specs: [
-            "test"
+            "Test"
         ],
         pricePerUnit: 10000000000000000,
     }
