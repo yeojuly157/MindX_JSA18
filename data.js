@@ -1,4 +1,4 @@
-// data.js
+
 const productsData = {
     "tui-giay": {
         title: "In Túi Giấy Theo Yêu Cầu",
