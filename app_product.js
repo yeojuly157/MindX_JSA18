@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const urlParams = new URLSearchParams(window.location.search);
-    const productId = urlParams.get('id') || 'tui-giay';
+    const productId = urlParams.get('id');
 
     if (typeof productsData === 'undefined') return;
     const product = productsData[productId];
