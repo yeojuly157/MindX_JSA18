@@ -1,4 +1,3 @@
-
 const productsData = {
     "tui-giay": {
         title: "In Túi Giấy Theo Yêu Cầu",
@@ -11,5 +10,13 @@ const productsData = {
         pricePerUnit: 5000,
         image1: "https://baobihoanggia.com/wp-content/uploads/2023/10/tui-dung-nuoc-hoa-5.jpg",
         image2: "https://i.pinimg.com/736x/3f/79/aa/3f79aae27bccbb0d8ec3167166987cba.jpg"
+    },
+    "hop-giay": {
+        title: "In Hộp Giấy Theo Yêu Cầu",
+        desc: "test",
+        specs: [
+            "test"
+        ],
+        pricePerUnit: 10000000000000000,
     }
 };
