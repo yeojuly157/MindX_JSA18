@@ -58,7 +58,7 @@ registerForm.addEventListener('submit', async (e) => {
         return;
     }
 
-    if (!/^(0|\+84)\d{9}$/.test(phone)) {
+    if (!/^(03|05|07|08|09)\d{8}$/.test(phone)) {
         msg.textContent = "Số điện thoại không hợp lệ.";
         return;
     }
