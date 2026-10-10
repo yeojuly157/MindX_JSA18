@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles_login.css">
+    <link rel="stylesheet" href="./CSS/styles_login.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" type="image/png" href="img/logo_newvision.png">
 </head>
@@ -40,11 +40,16 @@
                         <a href="#" class="forgot-password">Quên mật khẩu?</a>
                         <a href="register.html" class="register-link">Đăng ký tài khoản</a>
                     </div>
+                    <p id="msg" class="form-msg"></p>
                     <button type="submit" class="btn-submit">Đăng nhập</button>
+                    <div class="divider"><span>Hoặc</span></div>
+                    <button type="button" id="btnGoogle" class="btn-google">
+                        <i class="bi bi-google"></i> Đăng nhập bằng Google
+                    </button>
                 </form>
             </div>
         </section>
     </main>
-    <script src="app_login.js"></script>
+    <script type="module" src="./JS/app_login.js"></script>
 </body>
 </html>
