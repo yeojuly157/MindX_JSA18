@@ -190,6 +190,78 @@ body {
     cursor: not-allowed;
 }
 
+/* Hàng ô mã + nút Nhận mã */
+.code-row {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+}
+.code-row .input-wrapper {
+    flex: 1;
+    min-width: 0;
+}
+
+.btn-get-code {
+    flex-shrink: 0;
+    min-width: 120px;
+    padding: 0 18px;
+    background-color: #445B8B;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Afacad', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.btn-get-code:hover { background-color: #3a4f7a; }
+.btn-get-code:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#code {
+    letter-spacing: 6px;
+    font-weight: 600;
+}
+#code::placeholder {
+    letter-spacing: normal;
+    font-weight: 400;
+}
+
+.field-hint {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #777;
+}
+
+
+.form-msg {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+}
+.form-msg:empty { display: none; }
+
+
+.switch-text {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 15px;
+}
+.switch-text a {
+    color: #445B8B;
+    font-weight: 600;
+    text-decoration: none;
+}
+.switch-text a:hover { text-decoration: underline; }
+
+
+
 @media (max-width: 900px) {
     body {
         overflow: auto; 
@@ -202,4 +274,5 @@ body {
         padding: 40px 20px;
         height: auto;
     }
+
 }
